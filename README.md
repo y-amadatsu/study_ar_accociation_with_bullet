@@ -5,12 +5,15 @@ bundle install --path vendor/bundle
 ## model
 
 Actor
+
 - name
 
 Movie
+
 - name
 
 MovieActor
+
 - actor_id
 - movie_id
 
@@ -36,15 +39,15 @@ end
 
 以下の呼び出しで、
 
-http://localhost:3000/index4
+http://localhost:3000/actors/index4
 
-http://localhost:3000/index11
+http://localhost:3000/actors/index11
 
-なぜbullet警告エラーとなるのか？
+なぜ bullet 警告エラーとなるのか？
 
 そして、
-http://localhost:3000/index12
+http://localhost:3000/actors/index12
 
-はなぜbullet:OKなのか。
+はなぜ bullet:OK なのか。
 
-bulletのバグの可能性もあるけど、基本的な使い方なのが気にかかるところ…
+bullet のバグの可能性もあるけど、基本的な使い方なのが気にかかるところ…

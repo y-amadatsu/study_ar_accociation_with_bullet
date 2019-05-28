@@ -1,0 +1,18 @@
+<table border="1">
+<tr>
+<th>no.</th><th>name</th><th>movie_count</th><th>movies</th>
+</tr>
+<% @actors.each do |actor| %>
+<tr>
+<td><%= actor.id %></td>
+<td><%= actor.name %></td>
+<td><%= actor.movies.size %></td>
+<td>
+  <% actor.movies.each do |movie| %>
+  <div>
+      <%= "#{movie.id}: #{movie.name}" %>
+  </div>
+  <% end %>
+</tr>
+<% end %>
+</table>

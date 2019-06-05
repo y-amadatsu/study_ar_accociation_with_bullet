@@ -36,14 +36,14 @@ end
 
 以下の呼び出しで、
 
-http://localhost:3000/index4
+http://localhost:3000/actors/index4
 
-http://localhost:3000/index11
+http://localhost:3000/actors/index11
 
 なぜbullet警告エラーとなるのか？
 
 そして、
-http://localhost:3000/index12
+http://localhost:3000/actors/index12
 
 はなぜbullet:OKなのか。
 

@@ -18,7 +18,7 @@ MovieActor
 
 ```
 class Actor < ApplicationRecord
-  has_many :movie_actors, -> {order('id')}
+  has_many :movie_actors, -> {order('id')}, inverse_of: :actor
   has_many :movies, through: :movie_actors
   accepts_nested_attributes_for :movie_actors
 end
@@ -27,7 +27,7 @@ class Movie < ApplicationRecord
 end
 
 class MovieActor < ApplicationRecord
-  belongs_to :actor
+  belongs_to :actor, inverse_of: :movie_actors
   belongs_to :movie
 end
 ```
